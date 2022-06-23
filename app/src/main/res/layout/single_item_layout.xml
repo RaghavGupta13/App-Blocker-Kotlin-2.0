@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">
+
+    <ImageView
+        android:id="@+id/id_app_icon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_app_block"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="60"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/id_single_item_app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_apps_name"
+            android:textSize="22sp"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/id_single_item_app_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_apps_package"
+            android:textSize="15sp"
+            android:gravity="start"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+
+
+    <CheckBox
+        android:id="@+id/id_checkbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:layout_gravity="center_vertical"/>
+
+
+</LinearLayout>
